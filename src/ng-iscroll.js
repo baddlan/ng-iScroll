@@ -64,7 +64,7 @@ angular.module('ng-iscroll', []).directive('ngIscroll', function ()
       function setScroll()
       {
         if (scope.$parent.myScroll === undefined) {
-          scope.$parent.myScroll = [];
+          scope.$parent.myScroll = {};
         }
 
         scope.$parent.myScroll[scroll_key] = new IScroll(element[0], ngiScroll_opts);
